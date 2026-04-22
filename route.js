@@ -1,2 +1,3 @@
-
-console.log("this is route file")
+app.get("/", function(req, res) {
+  res.send("Server is running!");
+});
