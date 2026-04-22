@@ -24,7 +24,7 @@ app.get('/users/:id', (req, res) => {
   const user = users.find(el => el.id === id);
 
   if (!user) {
-    return res.status(404).json({ error: 'User not found' });
+    return res.status(404).json({ error: 'User no dey active' });
   }
   res.status(200).json(user);
 });
